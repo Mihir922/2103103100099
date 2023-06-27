@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table </title>
+</head>
+<body>
+    <input type="text" id="rows" placeholder="Enter the no. of rows"> <br><br>
+    <input type="text" id="column" placeholder="Enter the no. of column"> <br><br>
+    <input type="button" id="btnl" value="generate table"> <br><br>
+
+    <script>
+        var rows = document.getElementById("rows")
+        var column = document.getElementById("column")
+        var button= document.getElementById("button")
+
+        btnl.addEventListener("click",()=>{
+            document.write("<table border ='1' width='80%' height='300px'>" );
+            for(let i=0; i<rows.value; i++){
+
+            document.write("<tr>")
+            for(let j=0; j<column.value; j++)
+            {
+                document.write("<td align='center'> "+ "hello"+ "</td>");
+
+            }
+            document.write("</tr>");}
+            document.write("</table>");
+
+
+        })
+
+
+
+    </script>
+
+</body>
+</html>

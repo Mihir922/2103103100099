@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <table border="1" cellpadding="10" width="40%">
+            <tr>
+                <td align="center">array:</td>
+                <td align="center"><input type="text" placeholder="type here something" id="array_item"></td>
+            </tr>
+            <tr><br>
+                <td align="center">push:</td>
+                <td align="center"><input type="text" placeholder="enter the push" id="push_item"><input type="button" value="push" id="btn_push"><br>
+                    <p>enter element at a last</p>
+                </td>
+            </tr><br>
+            <tr>
+                <td align="center">pop:</td>
+                <td align="center"><input type="text" placeholder="enter num to push" id="pop_item"><input type="button" value="pop" id="btn_pop">
+                    <p>enter element at a last</p>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">unshift:</td>
+                <td align="center"><input type="text" placeholder="enter num to unshift" id="unshift_item"><input type="button" value="unshift" id="btn_unshift">
+                    <p>First element enter here</p>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">shift:</td>
+                <td align="center"><input type="text" placeholder="click to shift " id="shift_item" ><input type="button" value="shift" id="btn_shift">
+                    <p>First element enter here</p>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">sort:</td>
+                <td align="center"><input type="button" value="sort array "  id="btn_sort">
+
+                </td>
+            </tr>
+            <tr>
+                <td align="center">reverse:</td>
+                <td align="center"><input type="button" value="rename "  id="btn_reverse">
+            <tr>
+                <td align="center">concat:</td>
+                <td align="center"><input type="text" placeholder="" id="cancle_item"><input type="button" value="merge array" id="btn_merge">
+                    <input type="text"  id="merge_data">
+                </td>
+            </tr>
+
+
+        </table </center>
+</body>
+<script>
+    var array_item = document.getElementById("array_item");
+    var array = ["mihir","panchal","20","male","surendranagar"]
+
+    var push_item = document.getElementById("push_item");
+    var btn_push = document.getElementById("btn_push");
+
+    var pop_item = document.getElementById("pop_item");
+    var btn_pop = document.getElementById("btn_pop");
+    
+    var unshift_item = document.getElementById("unshift_item");
+    var btn_unshift = document.getElementById("btn_unshift");
+    
+    var shift_item = document.getElementById("shift_item");
+    var btn_shift = document.getElementById("btn_shift");
+    
+    var btn_sort = document.getElementById("btn_sort");
+   
+
+    var btn_reverse = document.getElementById("btn_reverse");
+
+    var cancle_item = document.getElementById("cancle_item");
+    var cancle__item = document.getElementById("cancle__item");
+
+
+    array_item.value = array;
+    btn_push.addEventListener("click",()=>{
+        array.push(push_item.value);
+        array_item.value = array;
+    });
+
+    array_item.value = array;
+    btn_pop.addEventListener("click",()=>{
+        array.pop();
+        array_item.value = array;
+    });
+
+    array_item.value = array;
+    btn_unshift.addEventListener("click",()=>{
+        array.unshift(unshift_item.value);
+        array_item.value = array;
+    });
+
+    array_item.value = array;
+    btn_shift.addEventListener("click",()=>{
+        array.shift();
+        array_item.value = array;
+    });
+
+    btn_sort.addEventListener("click",()=>{
+        array.sort();
+        array_item.value = array;
+    });
+
+    btn_reverse.addEventListener("click",()=>{
+        array.reverse();
+        array_item.value = array;
+    });
+
+    var data = ["prince","malviya","19","male","nikol"]
+    merge.value = data ;
+
+    btn_merge.addEventListener("click",()=>{
+       var merge_data= array.concat(data);
+        array_merge.value. = merge_data;
+    });
+    
+
+
+    
+
+    
+
+    
+
+
+   
+</script>
+
+</html>
